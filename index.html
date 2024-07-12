@@ -1,551 +1,529 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="zh-CN" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- add metadata tags as exercise -->
-    <meta name="author" content="bahaa ahmed">
-    <meta name="description" content="applab : best app for your modern lifestyle">
-    <meta name="keywords" content="applab,todo app,organize tasks">
-    <!-- add favicon for desktop and apple -->
-    <!-- Add this to your HEAD if you want to load the 
-        apple-touch-icons from another dir than your sites' root -->
+    <!-- 添加元数据标签 -->
+    <meta name="author" content="节奏空间">
+    <meta name="description" content="节奏空间：创新的共享办公空间，促进协作与创新">
+    <meta name="keywords" content="节奏空间, 共享办公, 创新, 科技, 数字经济">
+    <!-- 添加桌面和苹果设备的 favicon -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon-ipad-60x60.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-ipad-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-iphone-retina-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-ipad-retina-152x152.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-ipad-retina-152x152.png">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- add custom styles -->
+    <!-- 添加自定义样式 -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>App Lab</title>
+    <title>节奏空间</title>
 </head>
-<body><!--start header-->
+<body>
+    <!-- 开始头部 -->
     <header id="head">
-            <p class="logo flex">app<span class="logo__span">lab</span></p>
-            <nav class="navTop flex">
-                <ul class="flex">
-                    <Li><a href="#">Home</a></Li>
-                    <Li><a href="#">Key features</a></Li>
-                    <Li><a href="#">Pricing</a></Li>
-                    <Li><a href="#">Testimonila</a></Li>
-                    <Li><a href="#">FAQ</a></Li>
-                </ul>
-            </nav>
-            <div class="barsContainer" onclick="toggleMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-            <div class="flex"> 
-                <button class="navBtn btn">Try for free</button>
-            </div>
+        <p class="logo flex">节奏<span class="logo__span">空间</span></p>
+        <nav class="navTop flex">
+            <ul class="flex">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">主要功能</a></li>
+                <li><a href="#">定价</a></li>
+                <li><a href="#">客户评价</a></li>
+                <li><a href="#">常见问题</a></li>
+            </ul>
+        </nav>
+        <div class="barsContainer" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="flex">
+            <button class="navBtn btn">免费试用</button>
+        </div>
     </header>
-    <!--start home-->
+    <!-- 开始首页 -->
     <section id="home">
         <div class="wrapper flex">
             <div class="homeTxt">
                 <h3 class="homeTxt__head">
-                   <img src="images/pic.png" alt=""> #1 Editiors Choice App For 2020
+                    <img src="images/pic.png" alt=""> #1 创新共享办公空间
                 </h3>
-                <p class="homeTxt__para">Best app for your modern lifestyle</p>
-                <p class="homeTxt__description">increase productivity with a simple to do app for manging your personal budget</p>
+                <p class="homeTxt__para">适合现代生活方式的最佳办公空间</p>
+                <p class="homeTxt__description">通过简单的任务管理应用提高生产力，管理您的个人预算</p>
                 <div class="homeLinks">
-                    <button class="btn homeLinks__btn">try for free</button>
-                    <a href="">watch demo video</a>
+                    <button class="btn homeLinks__btn">免费试用</button>
+                    <a href="">观看演示视频</a>
                 </div>
             </div>
             <div class="appPhoto flex">
-                <img src="images/Phone.png"  alt="screenshot of the app homepage">
+                <img src="images/Phone.png" alt="应用主页截图">
             </div>
         </div>
     </section>
-    <!--start key features-->
+    <!-- 开始主要功能 -->
     <section>
         <div class="wrapper">
             <header class="companies">
-                <h4 class="companies__head">Trusted by companies like</h4>
+                <h4 class="companies__head">合作伙伴</h4>
                 <ul class="companiesList flex">
                     <li class="companiesList__item">
-                        <a href="#" >
-                            <img src="images/south.png" alt="south west company" width="133px" height="42px" class="features_companies-logo">
+                        <a href="#">
+                            <img src="images/south.png" alt="公司名称" width="133px" height="42px" class="features_companies-logo">
                         </a>
                     </li>
                     <li class="companiesList__item">
                         <a href="#">
-                            <img src="images/anubis.PNG" alt="anubis company" width="118px" height="84px" class="features_companies-logo">
+                            <img src="images/anubis.PNG" alt="公司名称" width="118px" height="84px" class="features_companies-logo">
                         </a>
                     </li>
                     <li class="companiesList__item">
                         <a href="#">
-                            <img src="images/alonzo.PNG" alt="alonzo company" width="151px" height="58px" class="features_companies-logo">
+                            <img src="images/alonzo.PNG" alt="公司名称" width="151px" height="58px" class="features_companies-logo">
                         </a>
                     </li>
                     <li class="companiesList__item">
                         <a href="#">
-                            <img src="images/express.PNG" alt="express company" width="123px" height="71px" class="features_companies-logo">
+                            <img src="images/express.PNG" alt="公司名称" width="123px" height="71px" class="features_companies-logo">
                         </a>
                     </li>
                     <li class="companiesList__item">
                         <a href="#">
-                            <img src="images/maniac.PNG" alt="manic company" width="147px" height="51px" class="features_companies-log">
+                            <img src="images/maniac.PNG" alt="公司名称" width="147px" height="51px" class="features_companies-logo">
                         </a>
                     </li>
                 </ul>
             </header>
             <div class="features flex">
                 <div>
-                    <img class="features__img" src="images/phone2.png" alt="A lot of features to help you mange your tasks easily">
+                    <img class="features__img" src="images/phone2.png" alt="节奏空间功能演示">
                 </div>
                 <div class="features-col-2">
                     <header class="featuresRight">
-                        <h1 class="featuresRight__head">Awesome apps<br> features</h1>
-                        <p class="featuresRight__para">increase productivity with a simple to do app for manging your personal budget</p>
+                        <h1 class="featuresRight__head">卓越的功能</h1>
+                        <p class="featuresRight__para">通过简单的任务管理应用提高生产力，管理您的个人预算</p>
                     </header>
                     <div class="featuresItems">
                         <article class="flex">
                             <div class="featuresItems__img">
-                                <img src="images/speed.png" alt="fast performance" width="88px" height="88px">
+                                <img src="images/speed.png" alt="快速性能" width="88px" height="88px">
                             </div>
                             <div class="featuresItems__sec">
-                                <h2 class="featuresItems__head featuresItems__head-pink">Fast Performance</h2>
-                                <p class="featuresItems__para">Get your blood test delivered at home collect a sample from the news blood test</p>
+                                <h2 class="featuresItems__head featuresItems__head-pink">快速性能</h2>
+                                <p class="featuresItems__para">在家中即可完成血液测试，收集样本以进行新血液测试</p>
                             </div>
                         </article>
                         <article class="flex">
                             <div class="featuresItems__img">
-                                <img src="images/prototype.png" alt="easy interface" width="88px" height="88px">
+                                <img src="images/prototype.png" alt="简易界面" width="88px" height="88px">
                             </div>
                             <div class="featuresItems__sec">
-                                <h2 class="featuresItems__head featuresItems__head-blue">Prototyping</h2>
-                                <p class="featuresItems__para">Get your blood test delivered at home collect a sample from the news blood test</p>
+                                <h2 class="featuresItems__head featuresItems__head-blue">原型设计</h2>
+                                <p class="featuresItems__para">在家中即可完成血液测试，收集样本以进行新血液测试</p>
                             </div>
                         </article>
                         <article class="flex">
                             <div class="featuresItems__img">
-                                <img src="images/vector.png" alt="awesome design"width="88px" height="88px">
+                                <img src="images/vector.png" alt="优秀设计" width="88px" height="88px">
                             </div>
                             <div class="featuresItems__sec">
-                                <h2 class="featuresItems__head featuresItems__head-green">Vector Editing</h2>
-                                <p class="featuresItems__para">Get your blood test delivered at home collect a sample from the news blood test</p>
+                                <h2 class="featuresItems__head featuresItems__head-green">矢量编辑</h2>
+                                <p class="featuresItems__para">在家中即可完成血液测试，收集样本以进行新血液测试</p>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
             <div class="featuresMobile flex">
-                <p class="featuresMobile__left">smart jackpots that you may love this anytime & anywhere</p>
-                <p class="featuresMobile__right">The rise of mobile devices transforms the way we
-                    consume information entirely and the world's most
-                    elevant channels such as Facebook.</p>
+                <p class="featuresMobile__left">智能奖池，随时随地都能使用</p>
+                <p class="featuresMobile__right">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
             </div>
             <div class="featuresPerformance flex">
                 <article class="featuresPerformance__col">
                     <div>
-                        <img src="images/bill.png" alt="automatic payouts" width="88px" height="88px">
+                        <img src="images/bill.png" alt="自动支付" width="88px" height="88px">
                     </div>
                     <div>
-                        <h2 class="featuresPerformance__head1 featuresPerformance__head1-mg featuresItems__head-pink">Automatic Payouts</h2>
-                        <p class="featuresPerformance__para1-mg">Get your blood test delivered at home collect a sample from the news blood test</p>
-                    </div>
-                </article>
-                <article class="featuresPerformance__col">
-                    <div>
-                        <img src="images/network.png" alt="huge network" width="88px" height="88px">
-                    </div>
-                    <div>
-                        <h2 class="featuresPerformance__head1 featuresPerformance__head1-mg featuresItems__head-blue">Network effects</h2>
-                        <p class="featuresPerformance__para1-mg">Get your blood test delivered at home collect a sample from the news blood test</p>
+                        <h2 class="featuresPerformance__head1 featuresPerformance__head1-mg featuresItems__head-pink">自动支付</h2>
+                        <p class="featuresPerformance__para1-mg">在家中即可完成血液测试，收集样本以进行新血液测试</p>
                     </div>
                 </article>
                 <article class="featuresPerformance__col">
                     <div>
-                        <img src="images/reward.png" alt=" good rewards" width="88px" height="88px">
+                        <img src="images/network.png" alt="庞大网络" width="88px" height="88px">
                     </div>
                     <div>
-                        <h2 class="featuresPerformance__head1 featuresPerformance__head1-mg featuresItems__head-green">Bigger reward method</h2>
-                        <p class="featuresPerformance__para1-mg">Get your blood test delivered at home collect a sample from the news blood test</p>
+                        <h2 class="featuresPerformance__head1 featuresPerformance__head1-mg featuresItems__head-blue">网络效应</h2>
+                        <p class="featuresPerformance__para1-mg">在家中即可完成血液测试，收集样本以进行新血液测试</p>
+                    </div>
+                </article>
+                <article class="featuresPerformance__col">
+                    <div>
+                        <img src="images/reward.png" alt="丰厚奖励" width="88px" height="88px">
+                    </div>
+                    <div>
+                        <h2 class="featuresPerformance__head1 featuresPerformance__head1-mg featuresItems__head-green">更大的奖励方式</h2>
+                        <p class="featuresPerformance__para1-mg">在家中即可完成血液测试，收集样本以进行新血液测试</p>
                     </div>
                 </article>
             </div>
         </div>
         <div class="featuresDesign">
             <div class="featuresDesign__col1">
-                <img src="images/design.png" alt="awesom design">
+                <img src="images/design.png" alt="优秀设计">
             </div>
             <div class="featuresDesign__col2 flex">
-                <h1 class="featuresDesign__head">Designed & built by
-                    the latest code
-                    integration</h1>
-                <p>The rise of mobile devices transforms the way we
-                    consume information entirely and the world's most
-                    elevant channels such as Facebook.</p>
-                <button class="btn featuresDesign__btn">learn more</button>
+                <h1 class="featuresDesign__head">采用最新代码集成的设计与构建</h1>
+                <p>移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
+                <button class="btn featuresDesign__btn">了解更多</button>
             </div>
         </div>
         <div class="whyUs">
-            <h1 class="whyUs__head">why you should choose our app</h1>
-            <p class="whyUs__para">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
+            <h1 class="whyUs__head">为什么选择我们的应用</h1>
+            <p class="whyUs__para">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
             <div class="grid">
                 <article class="center">
                     <div>
-                        <img src="images/app.png" alt="app development" width="88px" height="88px">
+                        <img src="images/app.png" alt="应用开发" width="88px" height="88px">
                     </div>
                     <div>
-                        <h2>App development</h2>
-                        <p>Get your blood test delivered at home collect a sample from the news blood test</p>
-                    </div>
-                </article>
-                <article class="center">
-                    <div>
-                        <img src="images/award.png" alt="our rewards" width="88px" height="88px">
-                    </div>
-                    <div>
-                        <h2>10 times award</h2>
-                        <p>Get your blood test delivered at home collect a sample from the news blood test</p>
+                        <h2>应用开发</h2>
+                        <p>在家中即可完成血液测试，收集样本以进行新血液测试</p>
                     </div>
                 </article>
                 <article class="center">
                     <div>
-                        <img src="images/cloud.png" alt="cloud storage" width="88px" height="88px">
+                        <img src="images/award.png" alt="我们的奖励" width="88px" height="88px">
                     </div>
                     <div>
-                        <h2>cloud storage</h2>
-                        <p>Get your blood test delivered at home collect a sample from the news blood test</p>
-                    </div>
-                </article>
-                <article class="center">
-                    <div>
-                        <img src="images/customize.png" alt="customize" width="88px" height="88px">
-                    </div>
-                    <div>
-                        <h2>customization</h2>
-                        <p>Get your blood test delivered at home collect a sample from the news blood test</p>
+                        <h2>10次奖励</h2>
+                        <p>在家中即可完成血液测试，收集样本以进行新血液测试</p>
                     </div>
                 </article>
                 <article class="center">
                     <div>
-                        <img src="images/ui.png" alt="ux" width="88px" height="88px">
+                        <img src="images/cloud.png" alt="云存储" width="88px" height="88px">
                     </div>
                     <div>
-                        <h2>UX plans</h2>
-                        <p>Get your blood test delivered at home collect a sample from the news blood test</p>
+                        <h2>云存储</h2>
+                        <p>在家中即可完成血液测试，收集样本以进行新血液测试</p>
                     </div>
                 </article>
                 <article class="center">
                     <div>
-                        <img src="images/customer.png" alt="customer support" width="88px" height="88px">
+                        <img src="images/customize.png" alt="自定义" width="88px" height="88px">
                     </div>
                     <div>
-                        <h2>customer support</h2>
-                        <p>Get your blood test delivered at home collect a sample from the news blood test</p>
+                        <h2>定制化</h2>
+                        <p>在家中即可完成血液测试，收集样本以进行新血液测试</p>
+                    </div>
+                </article>
+                <article class="center">
+                    <div>
+                        <img src="images/ui.png" alt="用户体验" width="88px" height="88px">
+                    </div>
+                    <div>
+                        <h2>用户体验计划</h2>
+                        <p>在家中即可完成血液测试，收集样本以进行新血液测试</p>
+                    </div>
+                </article>
+                <article class="center">
+                    <div>
+                        <img src="images/customer.png" alt="客户支持" width="88px" height="88px">
+                    </div>
+                    <div>
+                        <h2>客户支持</h2>
+                        <p>在家中即可完成血液测试，收集样本以进行新血液测试</p>
                     </div>
                 </article>
             </div>
         </div>
         <div class="ultimate">
             <div class="ultimate__col1">
-                <h1 class="ultimateHead">ultimate features that we build</h1>
-                <p class="ultimatePara">the rise of mobile transforms the way that consume informations entirly</p>
+                <h1 class="ultimateHead">我们构建的终极功能</h1>
+                <p class="ultimatePara">移动设备的兴起彻底改变了我们获取信息的方式。</p>
                 <div class="ultimateGrid">
                     <article>
                         <div class="ultimateGrid-img-container">
-                            <img src="images/app.png" alt="" height="66px" width="66px">
+                            <img src="images/app.png" alt="应用开发" height="66px" width="66px">
                         </div>
                         <div>
-                            <h2 class="ultimateGrid-head">App development</h2>
-                            <p class="ultimateGrid-para">Get your blood test delivered at home collect a sample from the news blood test</p>
-                        </div>
-                    </article>
-                    <article class="ultimateGrid-img-container">
-                        <div>
-                            <img src="images/ui.png" alt="" height="66px" width="66px">
-                        </div>
-                        <div>
-                            <h2 class="ultimateGrid-head">UX planning</h2>
-                            <p class="ultimateGrid-para">Get your blood test delivered at home collect a sample from the news blood test</p>
+                            <h2 class="ultimateGrid-head">应用开发</h2>
+                            <p class="ultimateGrid-para">在家中即可完成血液测试，收集样本以进行新血液测试</p>
                         </div>
                     </article>
                     <article class="ultimateGrid-img-container">
                         <div>
-                            <img src="images/cloud.png" alt="" height="66px" width="66px">
+                            <img src="images/ui.png" alt="用户体验" height="66px" width="66px">
                         </div>
                         <div>
-                            <h2 class="ultimateGrid-head">cloud storage</h2>
-                            <p class="ultimateGrid-para">Get your blood test delivered at home collect a sample from the news blood test</p>
+                            <h2 class="ultimateGrid-head">用户体验计划</h2>
+                            <p class="ultimateGrid-para">在家中即可完成血液测试，收集样本以进行新血液测试</p>
                         </div>
                     </article>
                     <article class="ultimateGrid-img-container">
                         <div>
-                            <img src="images/customer.png" alt="" height="66px" width="66px">
+                            <img src="images/cloud.png" alt="云存储" height="66px" width="66px">
                         </div>
                         <div>
-                            <h2 class="ultimateGrid-head">customer support</h2>
-                            <p class="ultimateGrid-para">Get your blood test delivered at home collect a sample from the news blood test</p>
+                            <h2 class="ultimateGrid-head">云存储</h2>
+                            <p class="ultimateGrid-para">在家中即可完成血液测试，收集样本以进行新血液测试</p>
+                        </div>
+                    </article>
+                    <article class="ultimateGrid-img-container">
+                        <div>
+                            <img src="images/customer.png" alt="客户支持" height="66px" width="66px">
+                        </div>
+                        <div>
+                            <h2 class="ultimateGrid-head">客户支持</h2>
+                            <p class="ultimateGrid-para">在家中即可完成血液测试，收集样本以进行新血液测试</p>
                         </div>
                     </article>
                 </div>
-                <button class="btn ultimateBtn">see all</button>
+                <button class="btn ultimateBtn">查看全部</button>
             </div>
             <div class="ultimate__col2 flex">
-                <img src="images/phone3.png" alt="ultimate design" width="500px">
+                <img src="images/phone3.png" alt="终极设计" width="500px">
             </div>
         </div>
     </section>
-    <!--start pricing-->
+    <!-- 开始定价 -->
     <section>
         <div class="wrapper">
-            <h1 class="priceHead center">Get awesome features, without extra charge</h1>
-            <p class="pricePara center">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
+            <h1 class="priceHead center">获取惊人的功能，无需额外费用</h1>
+            <p class="pricePara center">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
             <div class="priceTabs flex">
-                <button class="btn">Monthly</button>
-                <button class="btn checked">Annualy</button>
+                <button class="btn">月度</button>
+                <button class="btn checked">年度</button>
             </div>
             <div class="priceCards flex center">
                 <div class="card card-shadow">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge">$0</span>/month</p>
-                        <p class="cardTop__type">business class</p>
-                        <p>for small teams or office</p>
+                        <p><span class="cardTop__charge">￥0</span>/月</p>
+                        <p class="cardTop__type">商务级</p>
+                        <p>适合小团队或办公室</p>
                     </div>
                     <div class="cardBottom">
-                        <p>drag & drop builder</p>
-                        <p>1000's of templates</p>
-                        <p>blog support tools</p>
-                        <p>eCommerce store</p>
-                        <button class="btn card__btn">start free trial</button>
+                        <p>拖放构建器</p>
+                        <p>数千种模板</p>
+                        <p>博客支持工具</p>
+                        <p>电子商务商店</p>
+                        <button class="btn card__btn">开始免费试用</button>
                     </div>
                 </div>
                 <div class="card card-border">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge">$99</span>/month</p>
-                        <p class="cardTop__type">pro master</p>
-                        <p>for best opportunities</p>
+                        <p><span class="cardTop__charge">￥99</span>/月</p>
+                        <p class="cardTop__type">专业版</p>
+                        <p>适合最佳机会</p>
                     </div>
                     <div class="cardBottom">
-                        <p>drag & drop builder</p>
-                        <p>1000's of templates</p>
-                        <p>blog support tools</p>
-                        <p>eCommerce store</p>
-                        <button class="btn card__btn">Subscribe Now</button>
-                        <p><a href="">start 14 days trial</a></p>
+                        <p>拖放构建器</p>
+                        <p>数千种模板</p>
+                        <p>博客支持工具</p>
+                        <p>电子商务商店</p>
+                        <button class="btn card__btn">立即订阅</button>
+                        <p><a href="">开始14天试用</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--start testimonials-->
-    <section  id="testimonials">
-            <div class="testimonilas-left flex">
-                <!-- bitmap images -->
-                <!-- Image Map Generated by http://www.image-map.net/ -->
-                <img src="images/testimonials.png" usemap="#image-map">
-
-                <map name="image-map">
-                    <area onclick="currentSlide(1)" alt="facebook-CEO" title="facebook-CEO" 
-                    href="#testimonials" coords="71,135,29" shape="circle">
-                    <area onclick="currentSlide(2)" alt="google-CEO" title="google-CEO" href="#testimonials" coords="117,292,50" shape="circle">
-                    <area onclick="currentSlide(3)" alt="twitter-CEO" title="twitter-CEO" href="#testimonials" coords="299,450,67" shape="circle">
-                    <area onclick="currentSlide(4)" alt="linkedin-CEO" title="linkedin-CEO" href="#testimonials" coords="524,316,44" shape="circle">
-                    <area onclick="currentSlide(5)" alt="amazon-CEO" title="amazon-CEO" href="#testimonials" coords="639,74,29" shape="circle">
-                    <area onclick="currentSlide(6)" alt="apple-CEO" title="apple-CEO" href="#testimonials" coords="297,35,34" shape="circle">
-                    <area onclick="currentSlide(7)" alt="nokia-CEO" title="nokia-CEO" href="#testimonials" coords="338,238,55" shape="circle">
-                </map>
-            </div>
-            <div class="testimonilas-right">
-                <!-- carousal related to bitmap images with controllers -->
-                <!-- rating stars on every slide-->
-                <div class="carousel">
-
-                    <!-- facebook slide -->
-                    <div class="mySlides fade">
-                        <h1 class="carousel__head1">Meet clients satisfaction by using product</h1>
-                        <p class="carousel__para1">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <h3 class="carousel__head2">User friendly & customizable</h3>
-                        <p class="carousel__para2">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        <div class="flex partener">
-                            <img src="images/facebook-CEO.png" alt="facebook CEO" width="80px"
-                            height="80px" style="border-radius: 50%;">
-                            <div>
-                                <p class="partener__name">zolten nemhe</p>
-                                <p class="partener__job">facebooh CEO</p>
-                            </div>
+    <!-- 开始客户评价 -->
+    <section id="testimonials">
+        <div class="testimonilas-left flex">
+            <!-- 位图图像 -->
+            <!-- Image Map Generated by http://www.image-map.net/ -->
+            <img src="images/testimonials.png" usemap="#image-map">
+            <map name="image-map">
+                <area onclick="currentSlide(1)" alt="Facebook-CEO" title="Facebook-CEO" 
+                href="#testimonials" coords="71,135,29" shape="circle">
+                <area onclick="currentSlide(2)" alt="Google-CEO" title="Google-CEO" href="#testimonials" coords="117,292,50" shape="circle">
+                <area onclick="currentSlide(3)" alt="Twitter-CEO" title="Twitter-CEO" href="#testimonials" coords="299,450,67" shape="circle">
+                <area onclick="currentSlide(4)" alt="LinkedIn-CEO" title="LinkedIn-CEO" href="#testimonials" coords="524,316,44" shape="circle">
+                <area onclick="currentSlide(5)" alt="Amazon-CEO" title="Amazon-CEO" href="#testimonials" coords="639,74,29" shape="circle">
+                <area onclick="currentSlide(6)" alt="Apple-CEO" title="Apple-CEO" href="#testimonials" coords="297,35,34" shape="circle">
+                <area onclick="currentSlide(7)" alt="Nokia-CEO" title="Nokia-CEO" href="#testimonials" coords="338,238,55" shape="circle">
+            </map>
+        </div>
+        <div class="testimonilas-right">
+            <!-- 与位图图像相关的轮播图及控制器 -->
+            <!-- 每个幻灯片上的评分星星-->
+            <div class="carousel">
+                <!-- Facebook幻灯片 -->
+                <div class="mySlides fade">
+                    <h1 class="carousel__head1">通过使用产品满足客户的满意度</h1>
+                    <p class="carousel__para1">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h3 class="carousel__head2">用户友好且可定制</h3>
+                    <p class="carousel__para2">通过提供双赢的生存策略，确保主动主导。在一。</p>
+                    <div class="flex partener">
+                        <img src="images/facebook-CEO.png" alt="Facebook-CEO" width="80px" height="80px" style="border-radius: 50%;">
+                        <div>
+                            <p class="partener__name">Zolten Nemhe</p>
+                            <p class="partener__job">Facebook-CEO</p>
                         </div>
                     </div>
-
-                    <!--google slide -->
-                    <div class="mySlides fade">
-                        <h1 class="carousel__head1">Meet clients satisfaction by using product</h1>
-                        <p class="carousel__para1">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <h3 class="carousel__head2">User friendly & customizable</h3>
-                        <p class="carousel__para2">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        <div class="flex partener">
-                            <img src="images/google-CEO.png" alt="google-CEO" width="80px"
-                            height="80px" style="border-radius: 50%;">
-                            <div>
-                                <p class="partener__name">zolten nemhe</p>
-                                <p class="partener__job">google-CEO</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- twitter slide-->
-                    <div class="mySlides fade">
-                        <h1 class="carousel__head1">Meet clients satisfaction by using product</h1>
-                        <p class="carousel__para1">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <h3 class="carousel__head2">User friendly & customizable</h3>
-                        <p class="carousel__para2">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        <div class="flex partener">
-                            <img src="images/twitter-CEO.png" alt="twitter-CEO" width="80px"
-                            height="80px" style="border-radius: 50%;">
-                            <div>
-                                <p class="partener__name">zolten nemhe</p>
-                                <p class="partener__job">twitter-CEO</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- linkedin slide -->
-                    <div class="mySlides fade">
-                        <h1 class="carousel__head1">Meet clients satisfaction by using product</h1>
-                        <p class="carousel__para1">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <h3 class="carousel__head2">User friendly & customizable</h3>
-                        <p class="carousel__para2">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        <div class="flex partener">
-                            <img src="images/linkedin-CEO.png" alt="linkedin-CEO" width="80px"
-                            height="80px" style="border-radius: 50%;">
-                            <div>
-                                <p class="partener__name">zolten nemhe</p>
-                                <p class="partener__job">linkedin-CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--amazon slide-->
-                    <div class="mySlides fade">
-                        <h1 class="carousel__head1">Meet clients satisfaction by using product</h1>
-                        <p class="carousel__para1">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <h3 class="carousel__head2">User friendly & customizable</h3>
-                        <p class="carousel__para2">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        <div class="flex partener">
-                            <img src="images/amazon-CEO.png" alt="amazon-CEO" width="80px"
-                            height="80px" style="border-radius: 50%;">
-                            <div>
-                                <p class="partener__name">zolten nemhe</p>
-                                <p class="partener__job">amazon-CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--apple slide-->
-                    <div class="mySlides fade">
-                        <h1 class="carousel__head1">Meet clients satisfaction by using product</h1>
-                        <p class="carousel__para1">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <h3 class="carousel__head2">User friendly & customizable</h3>
-                        <p class="carousel__para2">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        <div class="flex partener">
-                            <img src="images/apple-CEO.png" alt="apple-CEO" width="80px"
-                            height="80px" style="border-radius: 50%;">
-                            <div>
-                                <p class="partener__name">zolten nemhe</p>
-                                <p class="partener__job">apple-CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--nokia slide-->
-                    <div class="mySlides fade">
-                        <h1 class="carousel__head1">Meet clients satisfaction by using product</h1>
-                        <p class="carousel__para1">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <h3 class="carousel__head2">User friendly & customizable</h3>
-                        <p class="carousel__para2">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        <div class="flex partener">
-                            <img src="images/nokia-CEO.png" alt="nokia-CEO" width="80px"
-                            height="80px" style="border-radius: 50%;">
-                            <div>
-                                <p class="partener__name">zolten nemhe</p>
-                                <p class="partener__job">nokia-CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--carousel controls-->
-                    <a class="next" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="prev" onclick="plusSlides(1)">&#10095;</a>
                 </div>
+                <!-- Google幻灯片 -->
+                <div class="mySlides fade">
+                    <h1 class="carousel__head1">通过使用产品满足客户的满意度</h1>
+                    <p class="carousel__para1">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h3 class="carousel__head2">用户友好且可定制</h3>
+                    <p class="carousel__para2">通过提供双赢触点。</p>
+                    <div class="flex partener">
+                        <img src="images/google-CEO.png" alt="Google-CEO" width="80px" height="80px" style="border-radius: 50%;">
+                        <div>
+                            <p class="partener__name">Zolten Nemhe</p>
+                            <p class="partener__job">Google-CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Twitter幻灯片 -->
+                <div class="mySlides fade">
+                    <h1 class="carousel__head1">通过使用产品满足客户的满意度</h1>
+                    <p class="carousel__para1">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h3 class="carousel__head2">用户友好且可定制</h3>
+                    <p class="carousel__para2">通过提供双赢的生存策略，确保主动主导。在一天有多个外包的接触点。</p>
+                    <div class="flex partener">
+                        <img src="images/twitter-CEO.png" alt="Twitter-CEO" width="80px" height="80px" style="border-radius: 50%;">
+                        <div>
+                            <p class="partener__name">Zolten Nemhe</p>
+                            <p class="partener__job">Twitter-CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- LinkedIn幻灯片 -->
+                <div class="mySlides fade">
+                    <h1 class="carousel__head1">通过使用产品满足客户的满意度</h1>
+                    <p class="carousel__para1">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h3 class="carousel__head2">用户友好且可定制</h3>
+                    <p class="carousel__para2">通过提供双赢的生存策略，确保主动主导。在一天结束时，向前的用户内容将有多个外包的接触点。</p>
+                    <div class="flex partener">
+                        <img src="images/linkedin-CEO.png" alt="LinkedIn-CEO" width="80px" height="80px" style="border-radius: 50%;">
+                        <div>
+                            <p class="partener__name">Zolten Nemhe</p>
+                            <p class="partener__job">LinkedIn-CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Amazon幻灯片 -->
+                <div class="mySlides fade">
+                    <h1 class="carousel__head1">通过使用产品满足客户的满意度</h1>
+                    <p class="carousel__para1">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h3 class="carousel__head2">用户友好且可定制</h3>
+                    <p class="carousel__para2">通过X世代演变而来，正朝着简化的云解决方案前进。实时生成的用户内容将有多个外包的接触点。</p>
+                    <div class="flex partener">
+                        <img src="images/amazon-CEO.png" alt="Amazon-CEO" width="80px" height="80px" style="border-radius: 50%;">
+                        <div>
+                            <p class="partener__name">Zolten Nemhe</p>
+                            <p class="partener__job">Amazon-CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apple幻灯片 -->
+                <div class="mySlides fade">
+                    <h1 class="carousel__head1">通过使用产品满足客户的满意度</h1>
+                    <p class="carousel__para1">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h3 class="carousel__head2">用户友好且可定制</h3>
+                    <p class="carousel__para2">通过提供双赢的生存前进。实时生成的用户内容将有多个外包的接触点。</p>
+                    <div class="flex partener">
+                        <img src="images/apple-CEO.png" alt="Apple-CEO" width="80px" height="80px" style="border-radius: 50%;">
+                        <div>
+                            <p class="partener__name">Zolten Nemhe</p>
+                            <p class="partener__job">Apple-CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nokia幻灯片 -->
+                <div class="mySlides fade">
+                    <h1 class="carousel__head1">通过使用产品满足客户的满意度</h1>
+                    <p class="carousel__para1">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h3 class="carousel__head2">用户友好且可定制</h3>
+                    <p class="carousel__para2">通过提供双赢的从X世代演变的用户内容将有多个外包的接触点。</p>
+                    <div class="flex partener">
+                        <img src="images/nokia-CEO.png" alt="Nokia-CEO" width="80px" height="80px" style="border-radius: 50%;">
+                        <div>
+                            <p class="partener__name">Zolten Nemhe</p>
+                            <p class="partener__job">Nokia-CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 轮播控制 -->
+                <a class="next" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="prev" onclick="plusSlides(1)">&#10095;</a>
             </div>
+        </div>
     </section>
-    <!--start FAQs-->
-    <!-- two milestons here-->
+    <!-- 开始常见问题 -->
     <section>
         <div class="wrapper faq">
-            <h1 class="faqHead center">Freaquently Asked Questions</h1>
-            <p class="faqPara center">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
+            <h1 class="faqHead center">常见问题</h1>
+            <p class="faqPara center">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
             <div class="faqAccordion">
-                <!--accordione tabs-->
+                <!-- 手风琴样式的常见问题 -->
                 <div class="faqContact">
-                    <h3 class="faqContact__head">How to contact emergency riders ?</h3>
-                    <p class="faq_contact-para">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                    </p>
+                    <h3 class="faqContact__head">如何联系紧急骑手？</h3>
+                    <p class="faq_contact-para">利用敏捷框架提供高水平概述的强大概要。迭代的企业战略方法进一步促进了整体价值主张。通过工作场所的多样性和授权，有机地成长对颠覆性创新的整体世界观。</p>
                 </div>
-                <button class="accordion">app installation failed how to update system information ? </button>
+                <button class="accordion">应用安装失败如何更新系统信息？</button>
                 <div class="panel">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum.</p>
                 </div>
-                <button class="accordion">website response taking time how to improve ?</button>
+                <button class="accordion">网站响应时间长如何改善？</button>
                 <div class="panel">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum.</p>
                 </div>
-                <button class="accordion">new update fix all bugs and issues ? </button>
+                <button class="accordion">新更新是否修复所有错误和问题？</button>
                 <div class="panel">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum.</p>
                 </div>
-                <button class="accordion">how to contact emergency riders ?</button>
+                <button class="accordion">如何联系紧急骑手？</button>
                 <div class="panel">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum.aaa</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!--start footer-->
+    <!-- 开始页脚 -->
     <footer id="footer">
         <div class="download">
             <div class="colLeft">
-                <h1 class="downloadHead">Download our App now !</h1>
-                <p class="downloadPara">the rise of mobile transforms the way that consume informations entirly and the world's most elevant channels such as facebook</p>
+                <h1 class="downloadHead">立即下载我们的应用！</h1>
+                <p class="downloadPara">移动设备的兴起彻底改变了我们获取信息的方式，以及世界上最相关的渠道如Facebook。</p>
                 <div class="downloadBtns flex">
                     <div class="downloadBtn">
                         <img src="images/google-play-btn.png" alt="">
@@ -556,26 +534,25 @@
                 </div>
             </div>
             <div class="colRight">
-                <img src="images/footer.png" alt="" width= "675px">
+                <img src="images/footer.png" alt="" width="675px">
             </div>
         </div>
         <div class="links center">
-            <h1 class="linksHead"><span>app</span>lab</h1>
+            <h1 class="linksHead"><span>节奏</span>空间</h1>
             <ul class="linksNav flex">
-                <Li><a href="">Home</a></Li>
-                <Li><a href="">Key features</a></Li>
-                <Li><a href="">Pricing</a></Li>
-                <Li><a href="">Testimonilas</a></Li>
-                <Li><a href="">FAQ</a></Li>
+                <li><a href="">首页</a></li>
+                <li><a href="">主要功能</a></li>
+                <li><a href="">定价</a></li>
+                <li><a href="">客户评价</a></li>
+                <li><a href="">常见问题</a></li>
             </ul>
-
             <ul class="socials flex">
                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
                 <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
                 <li><a href=""><i class="fab fa-github"></i></a></li>
             </ul>
-            <p class="copyright">copy right &copy; Bahaa Ahmed 2021 all rights are reserved</p>
+            <p class="copyright">版权所有 &copy; 节奏空间 2024 保留所有权利</p>
         </div>
     </footer>
     <script src="js/main.js"></script>
