@@ -15,9 +15,14 @@
     <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-ipad-retina-152x152.png">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- 添加自定义样式 -->
+
+    <script>
+        console.log("HTML文件已加载");
+    </script>
+
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>节奏空间</title>
+    <title>节奏空间Ritmo Hub</title>
 </head>
 <body>
     <!-- 开始头部 -->
@@ -84,6 +89,7 @@
                                 <p class="featuresItems__para">利用义乌强大的国际贸易基础，为中国企业拓展海外市场提供支持</p>
                             </div>
                         </article>
+
                         <article class="flex">
                             <div class="featuresItems__img">
                                 <img src="images/prototype.png" alt="文化交流" width="88px" height="88px">
@@ -93,6 +99,7 @@
                                 <p class="featuresItems__para">作为国内外文化艺术交流的场所，促进中国与各国之间的文化交流</p>
                             </div>
                         </article>
+
                         <article class="flex">
                             <div class="featuresItems__img">
                                 <img src="images/vector.png" alt="高端设施" width="88px" height="88px">
@@ -220,13 +227,13 @@
             <h1 class="priceHead center">灵活的入驻方式，满足您的需求</h1>
             <p class="pricePara center">我们提供多种入驻选择，从会员制到固定空间模式，适合不同规模的企业和个人</p>
             <div class="priceTabs flex">
-                <button class="btn">月度</button>
-                <button class="btn checked">年度</button>
-            </div>
+    <button class="btn" id="monthlyBtn">月度</button>
+    <button class="btn checked" id="yearlyBtn">年度</button>
+</div>
             <div class="priceCards flex center">
                 <div class="card card-shadow">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge">￥299</span>/月</p>
+                        <p><span class="cardTop__charge" data-monthly-price="￥299" data-yearly-price="￥2990">￥2990</span>/年</p>
                         <p class="cardTop__type">会员</p>
                         <p>适合个人和小团队</p>
                     </div>
@@ -240,7 +247,7 @@
                 </div>
                 <div class="card card-border">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge">￥499</span>/月</p>
+                        <p><span class="cardTop__charge" data-monthly-price="￥399" data-yearly-price="￥2990">￥2990</span>/年</p>
                         <p class="cardTop__type">高级会员</p>
                         <p>适合成长中的企业</p>
                     </div>
