@@ -1,7 +1,7 @@
 /* global styles */
 :root{
     --main-blue-clr:hsl(225, 38%, 23%);
-    --secondary-blue-clr:hsl(249, 100%, 49%);
+    --secondary-blue-clr:hsla(49, 100%, 50%, 0.967);
     --main-orange-clr:hsl(30, 96%, 68%);
     --main-bg-clr:hsl(240, 33%, 99%);
     --secondary-bg-clr:hsl(196, 23%, 91%);
@@ -24,6 +24,12 @@
     font-family: main-fnt-black;
     src: url(../fonts/Poppins-Black.ttf);
 }*/
+/* 
+img {
+    max-width: 50%;
+    height: auto;
+} */
+
 
 *{
     box-sizing: border-box;
@@ -57,6 +63,7 @@ h1,h2{
 .wrapper{
     width:80%;
     margin:0px auto;
+    
 }
 .flex{
     display:flex;
@@ -67,8 +74,8 @@ h1,h2{
     text-align:center;
 }
 .btn{
-    background-color:var(--secondary-blue-clr);
-    color:white;
+    background-color: #FF4B4B ;
+    color:rgb(0, 0, 0);
     border:none;
     outline: none;
     font-family: main-fnt-semibold;
@@ -76,10 +83,13 @@ h1,h2{
     height:56px;
     width:170px;
     border-radius: 28px;
+    transition: background-color 0.3s ease;
 }
 .btn:hover{
     cursor: pointer;
-    background-color: hsl(249, 100%, 30%);
+    background-color: hsla(59, 100%, 50%, 0.702);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+
 }
 /* ===== start header styles ======*/
 
@@ -416,9 +426,15 @@ h1,h2{
     padding: 2px;
     border: 1px solid #666;
 }
-.btn.checked{
+.btn.checked {
+    background-color: var(--secondary-blue-clr);
+    color: white;
+}
+
+.btn:not(.checked) {
     background-color: white;
-    color: #666;
+    color: var(--secondary-blue-clr);
+    border: 1px solid var(--secondary-blue-clr);
 }
 .priceCards{
     justify-content: center;
