@@ -87,3 +87,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // 初始化显示（默认显示年度价格）
     switchPlan(false);
 });
+
+
+let currentLang = 'zh'; // 默认语言为中文
+
+function toggleLanguage() {
+    currentLang = currentLang === 'zh' ? 'en' : 'zh';
+    updateContent();
+}
+
+function updateContent() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        element.textContent = translations[currentLang][key];
+    });
+}
+
+document.getElementById('languageToggle').addEventListener('click', toggleLanguage);
+
+// 初始化页面内容
+updateContent();
