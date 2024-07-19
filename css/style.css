@@ -1,7 +1,7 @@
 /* global styles */
 :root{
-    --main-blue-clr:hsl(225, 38%, 23%);
-    --secondary-blue-clr:hsla(49, 100%, 50%, 0.967);
+    --main-blue-clr:hsl(225, 38%, 23%);/* 字体 */
+    --secondary-blue-clr:hwb(49 0% 0% / 0.967);
     --main-orange-clr:hsl(30, 96%, 68%);
     --main-bg-clr:hsl(240, 33%, 99%);
     --secondary-bg-clr:hsl(196, 23%, 91%);
@@ -69,12 +69,44 @@ h1,h2{
     display:flex;
     justify-content: center;
     align-items: center;
+    list-style-type: none;
+    padding: 0;
 }
 .center{
     text-align:center;
 }
+
+.flex li {
+    margin-right: 20px;
+}
+
+.flex li:last-child {
+    margin-right: 0;
+}
+
+.flex a {
+    text-decoration: none;
+    color: #333; /* 调整颜色以匹配你的设计 */
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.flex a:hover {
+    color: #007bff; /* 鼠标悬停时的颜色 */
+    background-color: #f8f9fa; /* 鼠标悬停时的背景色 */
+    border-radius: 4px;
+}
+
+
+
+.yellow-btn-black-text {
+    background-color: #FFD700 !important;
+    color: #000000 !important;
+}
+
+
 .btn{
-    background-color: #FF4B4B ;
+    background-color: #ffe101 ;
     color:rgb(0, 0, 0);
     border:none;
     outline: none;
@@ -207,9 +239,14 @@ h1,h2{
     margin-right: 60px;
 }
 /* features*/
-.features{
-    height: 100vh;
+.features {
+    display: flex;/* 我加的 挺关键  */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    height: auto; /* 移除固定高度，使用自动高度 */
 }
+
 .features-col-2{
     align-self: flex-start;
 }
@@ -426,16 +463,21 @@ h1,h2{
     padding: 2px;
     border: 1px solid #666;
 }
-.btn.checked {
-    background-color: var(--secondary-blue-clr);
-    color: white;
-}
 
-.btn:not(.checked) {
+.btn.toggle-btn:not(.checked) {
     background-color: white;
     color: var(--secondary-blue-clr);
     border: 1px solid var(--secondary-blue-clr);
 }
+
+.btn.toggle-btn.checked {
+    /* 这里定义选中状态的样式 */
+    background-color: var(--secondary-blue-clr);
+    color: white;
+}
+
+
+
 .priceCards{
     justify-content: center;
     align-items: center;
@@ -1194,9 +1236,43 @@ h1,h2{
             justify-content: center;
         }  
     }
+    
+/*以下我加的*/
 
-
-
+    @media (max-width: 768px) {
+        .features {
+            flex-direction: column;
+        }
+        
+        .features > div {
+            width: 100%;
+        }
+    
+        .featuresRight__head {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 40px;
+        }
+    
+        .featuresRight__para {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    
+        .features img {
+            display: block; /* 改为显示，而不是隐藏 */
+        }
+    
+        .featuresItems__head {
+            text-align: center;
+        }
+    
+        .featuresItems__para {
+            margin: 5px auto;
+            width: 100%; /* 在移动设备上占满宽度 */
+        }
+    }
 
 
 

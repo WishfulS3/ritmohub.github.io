@@ -16,25 +16,26 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- 添加自定义样式 -->
 
+
     <script>
         console.log("HTML文件已加载");
     </script>
 
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" onload="console.log('CSS 文件已加载')">
     <title>节奏空间Ritmo Hub</title>
 </head>
 <body>
     <!-- 开始头部 -->
     <header id="head">
-        <p class="logo flex">节奏<span class="logo__span">空间</span></p>
+        <img src="images/apple-touch-icon-ipad-retina-152x152.png"  width="100" height="100"><p class="logo flex">节奏<span class="logo__span">空间</span></p>
+            
         <nav class="navTop flex">
             <ul class="flex">
-                <li><a href="#">首页</a></li>
-                <li><a href="#">主要功能</a></li>
-                <li><a href="#">定价</a></li>
-                <li><a href="#">客户评价</a></li>
-                <li><a href="#">常见问题</a></li>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#features">主要功能</a></li>
+                <li><a href="#pricing">定价</a></li>
+                <li><a href="#faq">常见问题</a></li>
             </ul>
         </nav>
         <div class="barsContainer" onclick="toggleMenu(this)">
@@ -60,19 +61,19 @@
                 </div>
             </div>
             <div class="appPhoto flex">
-                <img src="images/Phone.png" alt="节奏空间应用界面" width="250" height="480">
+                <img class="features__img" src="images/Phone.png" alt="节奏空间应用界面" width="250" height="480">
             </div>
         </div>
     </section>
     
     <!-- 更新主要功能部分 -->
-    <section>
+    <section id="features">
         <div class="wrapper">
             <!-- 合作伙伴部分保持不变 -->
             
             <div class="features flex">
                 <div>
-                    <img class="features__img" src="images/phone2.png" alt="节奏空间功能演示" width="450" height="850">
+                    <img class="features__img" src="images/phone2.png" alt="节奏空间功能演示" >
                 </div>
                 <div class="features-col-2">
                     <header class="featuresRight">
@@ -149,7 +150,7 @@
             </div>
             <div class="featuresDesign">
                 <div class="featuresDesign__col1">
-                    <img src="images/design.png" alt="创新优势">
+                    <img class="features__img" src="images/phone3.png" alt="创新优势">
                 </div>
                 <div class="featuresDesign__col2 flex">
                     <h1 class="featuresDesign__head">创新优势，助力业务发展</h1>
@@ -222,13 +223,13 @@
     </section>
     
     <!-- 更新定价部分 -->
-    <section>
+    <section id="pricing">
         <div class="wrapper">
             <h1 class="priceHead center">灵活的入驻方式，满足您的需求</h1>
             <p class="pricePara center">我们提供多种入驻选择，从会员制到固定空间模式，适合不同规模的企业和个人</p>
             <div class="priceTabs flex">
-    <button class="btn" id="monthlyBtn">月度</button>
-    <button class="btn checked" id="yearlyBtn">年度</button>
+    <button class="btn toggle-btn" id="monthlyBtn">月度</button>
+    <button class="btn toggle-btn" id="yearlyBtn">年度</button>
 </div>
             <div class="priceCards flex center">
                 <div class="card card-shadow">
@@ -247,7 +248,7 @@
                 </div>
                 <div class="card card-border">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge" data-monthly-price="￥399" data-yearly-price="￥2990">￥2990</span>/年</p>
+                        <p><span class="cardTop__charge" data-monthly-price="￥399" data-yearly-price="￥3990">￥2990</span>/年</p>
                         <p class="cardTop__type">高级会员</p>
                         <p>适合成长中的企业</p>
                     </div>
@@ -267,7 +268,7 @@
     <!-- 客户评价部分可以保持不变 -->
     
     <!-- 更新常见问题部分 -->
-    <section>
+    <section id="faq">
         <div class="wrapper faq">
             <h1 class="faqHead center">常见问题</h1>
             <p class="faqPara center">了解更多关于节奏空间的信息</p>
@@ -303,11 +304,13 @@
                 <h1 class="downloadHead">立即加入节奏空间！</h1>
                 <p class="downloadPara">探索创新的可能性，共同开创美好的未来。</p>
                 <div class="downloadBtns flex">
-                    <div class="downloadBtn">
-                        <a href="mailto:INFO@RITMOHUB.COM" class="btn">联系我们</a>
-                    </div>
-                    <div class="downloadBtn">
-                        <a href="http://WWW.RITMOHUB.COM" class="btn">访问官网</a>
+                    <div class="downloadBtns flex">
+                        <div class="downloadBtn">
+                            <img src="images/google-play-btn.png" alt="">
+                        </div>
+                        <div class="downloadBtn">
+                            <img src="images/app-store-btn.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>

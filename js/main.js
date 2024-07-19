@@ -27,22 +27,37 @@ for(let i = 0; i < acc.length; i++){
 //end faq accordion
 
 
-//年度
+
+//如果你想要平滑滚动效果）：
+document.querySelectorAll('.flex a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('Link clicked: ' + this.getAttribute('href'));
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            console.log('Scrolling to: ' + targetId);
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        } else {
+            console.log('Target element not found: ' + targetId);
+        }
+    });
+});
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const monthlyBtn = document.getElementById('monthlyBtn');
     const yearlyBtn = document.getElementById('yearlyBtn');
     const priceCards = document.querySelectorAll('.card');
+    const periodElements = document.querySelectorAll('.cardTop p:first-child');
 
-    monthlyBtn.addEventListener('click', function() {
-        switchPlan('monthly');
-    });
-
-    yearlyBtn.addEventListener('click', function() {
-        switchPlan('yearly');
-    });
-
-    function switchPlan(plan) {
-        if (plan === 'monthly') {
+    function switchPlan(isMonthly) {
+        if (isMonthly) {
             monthlyBtn.classList.add('checked');
             yearlyBtn.classList.remove('checked');
         } else {
@@ -50,16 +65,25 @@ document.addEventListener('DOMContentLoaded', function() {
             monthlyBtn.classList.remove('checked');
         }
 
-        // 这里添加切换价格的逻辑
-        priceCards.forEach(card => {
+        priceCards.forEach((card, index) => {
             const priceElement = card.querySelector('.cardTop__charge');
-            if (plan === 'monthly') {
-                // 切换到月度价格
-                priceElement.textContent = priceElement.getAttribute('data-monthly-price');
-            } else {
-                // 切换到年度价格
-                priceElement.textContent = priceElement.getAttribute('data-yearly-price');
-            }
+            const price = isMonthly ? priceElement.dataset.monthlyPrice : priceElement.dataset.yearlyPrice;
+            priceElement.textContent = price;
+            
+            // 更新周期文本（每月/每年）
+            const periodText = isMonthly ? '/月' : '/年';
+            periodElements[index].innerHTML = periodElements[index].innerHTML.replace(/\/[月年]/, periodText);
         });
     }
+
+    monthlyBtn.addEventListener('click', function() {
+        switchPlan(true);
+    });
+
+    yearlyBtn.addEventListener('click', function() {
+        switchPlan(false);
+    });
+
+    // 初始化显示（默认显示年度价格）
+    switchPlan(false);
 });
