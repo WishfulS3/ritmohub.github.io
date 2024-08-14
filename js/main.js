@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             priceElement.textContent = price;
             
             // 更新周期文本（每月/每年）
-            const periodText = isMonthly ? '/月' : '/年';
+            const periodText = isMonthly ? '/月' : '/月';
             periodElements[index].innerHTML = periodElements[index].innerHTML.replace(/\/[月年]/, periodText);
         });
     }
