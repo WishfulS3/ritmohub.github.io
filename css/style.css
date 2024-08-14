@@ -130,16 +130,32 @@ h1,h2{
     grid-template-columns: repeat(10,1fr);
     height: 10vh;
 }
+
 /* logo styles*/
 .logo{
-    color:var(--main-orange-clr);
+    color:var(--secondary-blue-clr);
     font-family: main-fnt-semibold;
-    font-size: 30px;
     grid-column: 2 /span 1;
+    font-size: 24px; /* 调整字体大小 */
+    font-weight: 700; /* 让字体更粗 */
+    margin: 0; /* 移除默认的段落边距 */
 }
 .logo__span{
     color:var(--main-blue-clr);
 }
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1px; /* 调整图像和文字之间的间距 */
+  }
+  
+  .logo-container img {
+    width: 80px; /* 调整图像大小 */
+    height: 80px;
+  }
+  
 /*  top navigation */
 .navTop{
     grid-column: 5 /span 4;
