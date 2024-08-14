@@ -185,7 +185,7 @@ h1,h2{
 
 /*===== start home styles =======*/
 #home{
-    height: 90vh;
+
     background-image: url('../images/home-bg.png');
     background-repeat: repeat-x;
     background-position-y:bottom;
@@ -790,11 +790,20 @@ h1,h2{
 }
 /* end footer*/
 
+
 /*===========================================*/
-/* ==== styles  for extra small devices ====*/
+/* ==== styles  for phone ====*/
 /*=========================================*/
 
+
 @media only screen and (max-width:600px){
+    #home{
+        height: 35vh;
+        background-image: url('../images/home-bg.png');
+        background-repeat: repeat-x;
+        background-position-y:bottom;
+    }
+
     :root{
         font-size: 18px;
     }
