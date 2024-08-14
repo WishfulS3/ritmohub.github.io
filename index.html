@@ -35,12 +35,12 @@
 
         <nav class="navTop flex">
             <ul class="flex">
-                <li><a href="#home" data-translate="home">首页</a></li>
+                <!--  <li><a href="#home" data-translate="home">首页</a></li>--> 
                 <li><a href="#features" data-translate="features">主要功能</a></li>
                 <li><a href="#pricing" data-translate="pricing">定价</a></li>
+                <li><a href="#news" data-translate="news">最新动态</a></li>
                 <li><a href="#faq" data-translate="faq">常见问题</a></li>
                 <li><a href="#contact" data-translate="faq">联系我们</a></li>
-
             </ul>
         </nav>
         <div class="barsContainer" onclick="toggleMenu(this)">
@@ -62,7 +62,10 @@
                 <h3 class="homeTxt__head">
                     <img src="images/pic.png" alt=""> #1 创新共享办公空间
                 </h3>
-                <p class="homeTxt__para" style="font-size: 30px;">欢迎来到节奏空间  
+
+
+                <p class="homeTxt__para" style="font-size: 2.5rem;
+        font-weight: 700;">欢迎来到节奏空间  
                     </p>
                     <p class="homeTxt__para" style="font-size: 25px;">
                         空间共创，灵感无界 </p>
@@ -72,7 +75,7 @@
                 <p class="homeTxt__description">我们为创业者、自由职业者和企业家提供充满活力的创新场所，促进跨行业交流与合作</p>
                 <div class="homeLinks">
                     <button class="btn homeLinks__btn">免费试用</button>
-                    <a href="">了解更多</a>
+                       <!--<a href="">了解更多</a>-->
                 </div>
             </div>
             <div class="appPhoto flex">
@@ -361,7 +364,28 @@
         </div>
     </section>
     
-    <!-- 客户评价部分可以保持不变 -->
+    <section id="news" class="section">
+        <div class="wrapper">
+            <h2 class="center section-title" data-translate="news">最新动态</h2>
+            <div class="news-container">
+                <article class="news-item">
+                    <h3>节奏空间荣获2024年度创新企业奖</h3>
+                    <p class="news-date">2024年6月15日</p>
+                    <p>我们很高兴地宣布,节奏空间凭借其创新的共享办公理念和卓越的服务品质,荣获2024年度创新企业奖。这个奖项是对我们团队辛勤工作的肯定,也激励我们继续为客户提供更好的服务。</p>
+                </article>
+                <article class="news-item">
+                    <h3>节奏空间义乌新店盛大开业</h3>
+                    <p class="news-date">2024年5月1日</p>
+                    <p>为了满足日益增长的需求,节奏空间在义乌市中心开设了新的分店。新店配备了最先进的办公设施和会议系统,为创业者和企业提供更多优质的办公空间选择。</p>
+                </article>
+                <article class="news-item">
+                    <h3>节奏空间推出全新会员福利计划</h3>
+                    <p class="news-date">2024年4月1日</p>
+                    <p>为了回馈广大会员的支持,节奏空间推出了全新的会员福利计划。包括免费参加行业讲座、优先预订会议室、专属商务咨询服务等多项福利,让会员们享受更多价值。</p>
+                </article>
+            </div>
+        </div>
+    </section>
     
     <!-- 更新常见问题部分 -->
     <section id="faq">
@@ -393,12 +417,17 @@
         </div>
     </section>
     
-    <!-- 更新页脚部分 -->
+    
     <section id="contact">
         <div class="download">
             <div class="colLeft">
                 <h1 class="downloadHead">立即加入节奏空间！</h1>
                 <p class="downloadPara">探索创新的可能性，共同开创美好的未来。</p>
+
+                <div class="phone">
+                    <h2>客服热线: 18157866658</h2>
+                  </div>
+
                 <div class="downloadBtns flex">
                     <div class="downloadBtns flex">
                         <div class="downloadBtn">
@@ -411,7 +440,7 @@
                 </div>
             </div>
             <div class="colRight">
-                <img src="images/footer.png" alt="节奏空间环境" width="675px">
+                <img src="images/contact.jpg" alt="节奏空间环境" width="250px">
             </div>
         </div>
     </section>
@@ -419,22 +448,26 @@
     <footer id="footer">
         
         <div class="links center">
-            <h1 class="linksHead"><span>节奏</span>空间</h1>
+            <h1 class="linksHead"><span>节奏空间</span></h1>
             <ul class="linksNav flex">
-                <li><a href="">首页</a></li>
-                <li><a href="">主要功能</a></li>
-                <li><a href="">定价</a></li>
-                <li><a href="">客户评价</a></li>
-                <li><a href="">常见问题</a></li>
+                        <li><a href="#home" data-translate="home">首页</a></li>
+                        <li><a href="#features" data-translate="features">主要功能</a></li>
+                        <li><a href="#pricing" data-translate="pricing">定价</a></li>
+                        <li><a href="#news" data-translate="news">最新动态</a></li>
+                        <li><a href="#faq" data-translate="faq">常见问题</a></li>
+                        <li><a href="#contact" data-translate="faq">联系我们</a></li>
+                </nav>
             </ul>
+            <p>地址：浙江省义乌市福田街道金融商务区金融三街3号莲都大厦</p>
+
+               <!-- 
             <ul class="socials flex">
                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
                 <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            </ul>
+            </ul> -->
             <p class="copyright">版权所有 &copy; 节奏空间 2024 保留所有权利</p>
-            <p>地址：浙江省义乌市福田街道金融商务区金融三街3号莲都大厦</p>
         </div>
     </footer>
     <script src="js/main.js"></script>
