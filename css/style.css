@@ -1,6 +1,6 @@
 /* global styles */
 :root{
-    --main-blue-clr:hsl(225, 38%, 23%);/* 字体 */
+    --main-blue-clr:hsl(224, 38%, 23%);/* 字体 224, 38%, 23%*/
     --secondary-blue-clr:hwb(49 0% 0% / 0.967);
     --main-orange-clr:hsl(30, 96%, 68%);
     --main-bg-clr:hsl(240, 33%, 99%);
