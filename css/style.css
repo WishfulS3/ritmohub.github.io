@@ -230,10 +230,34 @@ h1,h2{
     color: var(--secondary-blue-clr);
 }
 .appPhoto{
-    width:40%;
+    width:60%;
     margin-top: 50px;
     justify-content: flex-start;
     align-items: flex-end;
+    gap: 50px; /* 调整这个值来增加或减少间距 */
+
+
+
+}
+
+.phone-container {
+    flex-grow: 1; /* 项目不会伸展变大 (flex-grow: 0)  */
+    flex-shrink: 1;/* 如果需要,项目可以收缩 (flex-shrink: 1)*/
+    flex-basis: auto;/* 项目的初始大小由其内容决定 (flex-basis: auto)    */
+}
+
+.features__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .appPhoto {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 /*===== end home styles =======*/
