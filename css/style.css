@@ -136,9 +136,12 @@ h1,h2{
     color:var(--secondary-blue-clr);
     font-family: main-fnt-semibold;
     grid-column: 2 /span 1;
-    font-size: 24px; /* 调整字体大小 */
+    font-size: 20px; /* 调整字体大小 */
     font-weight: 700; /* 让字体更粗 */
     margin: 0; /* 移除默认的段落边距 */
+    writing-mode: horizontal-tb; /* 使文字垂直排列，从右到左 */
+    text-orientation: sideways; /* 保持字符直立 */
+    white-space: nowrap; /* 防止文字换行 */
 }
 .logo__span{
     color:var(--main-blue-clr);
@@ -152,8 +155,8 @@ h1,h2{
   }
   
   .logo-container img {
-    width: 80px; /* 调整图像大小 */
-    height: 80px;
+    width: 100px; /* 调整图像大小 */
+    height: 100px;
   }
   
 /*  top navigation */
