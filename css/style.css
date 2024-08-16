@@ -234,7 +234,7 @@ h1,h2{
     margin-top: 50px;
     justify-content: flex-start;
     align-items: flex-end;
-    gap: 50px; /* 调整这个值来增加或减少间距 */
+    gap: 70px; /* 调整这个值来增加或减少间距 */
 
 
 
