@@ -1,6 +1,7 @@
+console.log('Price cards found:', document.querySelectorAll('.card').length);
+console.log('Period elements found:', document.querySelectorAll('.cardTop p:first-child').length);
 const menu = document.querySelector('.navTop');
 console.log("JavaScript文件已加载");
-
 
 function toggleMenu(x){
     x.classList.toggle('change');
@@ -48,45 +49,92 @@ document.querySelectorAll('.flex a').forEach(anchor => {
 
 
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const monthlyBtn = document.getElementById('monthlyBtn');
+    const quarterlyBtn = document.getElementById('quarterlyBtn');
     const yearlyBtn = document.getElementById('yearlyBtn');
-    const priceCards = document.querySelectorAll('.card');
-    const periodElements = document.querySelectorAll('.cardTop p:first-child');
 
-    function switchPlan(isMonthly) {
-        if (isMonthly) {
-            monthlyBtn.classList.add('checked');
-            yearlyBtn.classList.remove('checked');
-        } else {
-            yearlyBtn.classList.add('checked');
-            monthlyBtn.classList.remove('checked');
-        }
-
-        priceCards.forEach((card, index) => {
-            const priceElement = card.querySelector('.cardTop__charge');
-            const price = isMonthly ? priceElement.dataset.monthlyPrice : priceElement.dataset.yearlyPrice;
-            priceElement.textContent = price;
-            
-            // 更新周期文本（每月/每年）
-            const periodText = isMonthly ? '/月' : '/月';
-            periodElements[index].innerHTML = periodElements[index].innerHTML.replace(/\/[月年]/, periodText);
+    if (monthlyBtn) {
+        monthlyBtn.addEventListener('click', () => {
+            console.log('Monthly button clicked');
+            switchPlan('monthly');
         });
     }
 
-    monthlyBtn.addEventListener('click', function() {
-        switchPlan(true);
-    });
+    if (quarterlyBtn) {
+        quarterlyBtn.addEventListener('click', () => {
+            console.log('Quarterly button clicked');
+            switchPlan('quarterly');
+        });
+    }
 
-    yearlyBtn.addEventListener('click', function() {
-        switchPlan(false);
-    });
+    if (yearlyBtn) {
+        yearlyBtn.addEventListener('click', () => {
+            console.log('Yearly button clicked');
+            switchPlan('yearly');
+        });
+    }
 
     // 初始化显示（默认显示年度价格）
-    switchPlan(false);
+    switchPlan('yearly');
 });
+
+function switchPlan(period) {
+    console.log('Switching to:', period);
+
+    // 移除所有按钮的checked类
+    [monthlyBtn, quarterlyBtn, yearlyBtn].forEach(btn => {
+        if (btn) btn.classList.remove('checked');
+    });
+    
+    // 为选中的按钮添加checked类
+    const selectedBtn = document.getElementById(`${period}Btn`);
+    if (selectedBtn) selectedBtn.classList.add('checked');
+
+    const priceCards = document.querySelectorAll('.card');
+
+    priceCards.forEach((card, index) => {
+        console.log(`Processing card ${index}`);
+        console.log(`Card ${index} HTML:`, card.outerHTML);
+
+        const priceElement = card.querySelector('.cardTop__charge');
+        if (!priceElement) {
+            console.error(`Price element not found for card ${index}`);
+            return; // Skip this iteration
+        }
+
+        console.log(`Price element for card ${index}:`, priceElement);
+        console.log(`Dataset for card ${index}:`, priceElement.dataset);
+
+        let price;
+        let periodText;
+
+        switch(period) {
+            case 'monthly':
+                price = priceElement.dataset.monthlyPrice;
+                periodText = '/月';
+                break;
+            case 'quarterly':
+                price = priceElement.dataset.quarterlyPrice;
+                periodText = '/季度付费每月';
+                break;
+            case 'yearly':
+                price = priceElement.dataset.yearlyPrice;
+                periodText = '/年付费每月';
+                break;
+        }
+
+        if (!price) {
+            console.error(`Price not found for ${period} period in card ${index}`);
+            return; // Skip this iteration
+        }
+
+        console.log('Updating price for card', index, 'to', price);
+        priceElement.textContent = price + periodText;
+    });
+}
+
+
 
 
 let currentLang = 'zh'; // 默认语言为中文
@@ -104,6 +152,25 @@ function updateContent() {
 }
 
 document.getElementById('languageToggle').addEventListener('click', toggleLanguage);
+
+const translations = {
+    'zh': {
+        'home': '首页',
+        'features': '主要功能',
+        'pricing': '定价',
+        'testimonials': '客户评价',
+        'faq': '常见问题',
+        // 添加更多中文文本...
+    },
+    'en': {
+        'home': 'Home',
+        'features': 'Features',
+        'pricing': 'Pricing',
+        'testimonials': 'Testimonials',
+        'faq': 'FAQ',
+        // 添加更多英文文本...
+    }
+};
 
 // 初始化页面内容
 updateContent();

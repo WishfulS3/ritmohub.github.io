@@ -21,6 +21,7 @@
 
     <script>
         console.log("HTML文件已加载");
+
     </script>
 
     <link rel="stylesheet" href="css/all.min.css">
@@ -255,13 +256,15 @@
             <h1 class="priceHead center">灵活的入驻方式，满足您的需求</h1>
             <p class="pricePara center">我们提供多种入驻选择，从会员制到固定空间模式，适合不同规模的企业和个人</p>
             <div class="priceTabs flex">
-    <button class="btn toggle-btn" id="monthlyBtn">基础价格</button>
-    <button class="btn toggle-btn" id="yearlyBtn">年卡</button>
-</div>
+                <button class="btn toggle-btn checked" id="monthlyBtn" >月卡</button>
+                <button class="btn toggle-btn" id="quarterlyBtn" >季卡</button>
+                <button class="btn toggle-btn" id="yearlyBtn">年卡</button>
+              </div>
+              
             <div class="priceCards flex center">
                 <div class="card card-shadow">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge" data-monthly-price="￥299" data-yearly-price="￥259"></span>/月</p>
+                        <p><span class="cardTop__charge" data-monthly-price="￥299" data-quarterly-price="￥279"  data-yearly-price="￥259"></span></p>
                         <p class="cardTop__type">初级会员</p>
                         <p>适合个人和小团队</p>
                     </div>
@@ -286,7 +289,7 @@
 
                 <div class="card card-shadow">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge" data-monthly-price="￥899" data-yearly-price="￥799"></span>/月</p>
+                        <p><span class="cardTop__charge" data-monthly-price="￥899" data-quarterly-price="￥279" data-yearly-price="￥799"></span></p>
                         <p class="cardTop__type">高级会员</p>
                         <p>适合成长中的企业</p>
                     </div>
@@ -319,7 +322,7 @@
 
                 <div class="card card-shadow">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge" data-monthly-price="￥1688" data-yearly-price="￥1488"></span>/月/位</p>
+                        <p><span class="cardTop__charge" data-monthly-price="￥1688" data-quarterly-price="￥279" data-yearly-price="￥1488"></span>/位</p>
                         <p class="cardTop__type">固定空间模式(4位起租)</p>
                         <p>三月起订</p>
                     </div>
@@ -345,7 +348,7 @@
 
                 <div class="card card-shadow">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge" data-monthly-price="￥7800" data-yearly-price="￥7700"></span>/月</p>
+                        <p><span class="cardTop__charge" data-monthly-price="￥7800"  data-quarterly-price="￥279" data-yearly-price="￥7700"></span></p>
                         <p class="cardTop__type">展示空间模式(普通)</p>
                         <p>三月起订</p>
                     </div>
@@ -372,7 +375,7 @@
 
                 <div class="card card-shadow">
                     <div class="cardTop">
-                        <p><span class="cardTop__charge" data-monthly-price="￥9800" data-yearly-price="￥9700"></span>/月</p>
+                        <p><span class="cardTop__charge" data-monthly-price="￥9800"  data-quarterly-price="￥279" data-yearly-price="￥9700"></span></p>
                         <p class="cardTop__type">展示空间模式(异形)</p>
                         <p>三月起订</p>
                     </div>
@@ -529,6 +532,5 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-    <script src="js/translations.js"></script>
 </body>
 </html>
