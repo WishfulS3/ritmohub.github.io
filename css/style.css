@@ -548,7 +548,7 @@ h1,h2{
 }
 .cardTop__charge{
     font-family: main-fnt-bold;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--main-blue-clr);
 }
 .cardTop__type{
