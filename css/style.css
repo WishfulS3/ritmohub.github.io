@@ -1447,4 +1447,32 @@ h1,h2{
     }
 
 
+    .appPhoto {
+        display: flex;
+        justify-content: center;
+        gap: 50px; /* 调整图片之间的间距 */
+        align-items: flex-start; /* 顶部对齐 */
+
+    }
+    
+    .phone-container {
+
+        width: 186px; /* 设置容器宽度 */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .features__img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* 确保图片完整显示 */
+        max-height: 368px; /* 限制最大高度，可以根据需要调整 */
+        /*object-fit: cover;  保持图片比例并填充容器 */
+        object-position: center; /* 居中图片 */
+    } 
+
+    /* 专门针对第一张图片的样式 */
+.phone-container:first-child .features__img {
+    max-height: 368px; /* 稍微增加第一张图片的最大高度，可以根据需要调整 */
+}
 
