@@ -521,26 +521,33 @@ h1,h2{
 
 
 
-.priceCards{
+.priceCards {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
-.card{
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 300px;
+    margin: 0 10px;
     background-color: white;
     border-radius: 7px;
-    padding-bottom: 20px;
-    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .card-shadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card-border{
     border:3px solid #ebebeb;
 }
-.cardTop{
+.cardTop {
     background-image: linear-gradient(#fdfefe,#f4f7f9);
     padding: 30px 40px 15px 40px;
-    border-radius: 7px;
+    border-radius: 7px 7px 0 0;
 }
 .cardTop>p:first-child{
     margin-top:0;
@@ -563,29 +570,36 @@ h1,h2{
     color:hsl(225, 6%, 62%);
 }
 
-
-.priceCards {
-    display: flex;
-    justify-content: center;
-    align-items: stretch; /* 这会使卡片拉伸到最高卡片的高度 */
-}
-
-.card {
+.cardBottom {
     display: flex;
     flex-direction: column;
-    flex: 1; /* 让卡片平均分配空间 */
-    max-width: 300px; /* 或其他合适的最大宽度 */
-    margin: 0 10px; /* 为卡片之间添加一些间距 */
-}
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: space-between; /* 在顶部和底部之间分配空间 */
+    align-items: center; /* 水平居中内容 */
+  }
 
-.cardTop {
-    flex: 0 0 auto; /* 顶部内容不伸缩 */
-}
+  .card__btn {
+    padding: 10px 30px;
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .card__btn:hover {
+    background-color: #FFC700;
+  }
+  
 
 
-.card__btn {
-    margin-top: auto; /* 将按钮推到底部 */
-}
+
+
+
+
 
 /* start testimonials*/
 #testimonials{
